@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin: 0 auto;
+}
+nav .logo {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 5px;
+  font-size: 37px;
+  margin-left: 50px;
+}
+nav ul {
+  margin-left: 60px;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 50px;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  color: #1b1b1b;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  width: 40px;
+}
+nav .shopping {
+  margin-left: 80px;
+  font-size: 20px;
+}
+nav ul li::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  background-color: #1b1b1b;
+  left: 50px;
+  top: 20px;
+  transition: 0.4s ease-in-out;
+}
+nav ul li:hover::after {
+  width: 80px;
+}
+#section-1 .flowers-info h2,
+#section-3 .flowers-suprise h2,
+#section-2 h2,
+#section-4 h2 {
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  max-width: 347px;
+  height: 103px;
+  line-height: 51px;
+  font-weight: 400;
+  font-size: 41px;
+}
+#section-1 .flowers-info p,
+#section-3 .flowers-suprise p,
+#section-2 p,
+#section-4 p {
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(109, 106, 106);
+  max-width: 400px;
+  height: 89px;
+  line-height: 29px;
+  font-weight: 400;
+  font-size: 17px;
+}
+#section-1 {
+  margin-top: 50px;
+  background-color: #f0ecec;
+  display: flex;
+  flex-direction: row;
+  height: 480px;
+  margin: 0 auto;
+}
+#section-1 .flowers-info {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#section-1 .flowers-info h2 {
+  margin-left: 60px;
+}
+#section-1 .flowers-info p {
+  margin-left: 60px;
+  margin-top: 20px;
+}
+#section-1 .flowers-image img {
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-left: 230px;
+  width: 380px;
+  height: 380px;
+  transition: 0.8s ease-in-out;
+  overflow: hidden;
+}
+#section-1 .flowers-image img:hover {
+  transform: scale(1.2);
+}
+#section-2 h2 {
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+#section-2 p {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+#section-2 .images {
+  margin-left: 65px;
+}
+#section-2 .images div {
+  display: inline-block;
+  padding-left: 60px;
+}
+#section-2 .images div h3 {
+  font-family: "Red Hat Display", sans-serif;
+  color: black;
+  max-width: 400px;
+  height: 89px;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+#section-2 .images div h4 {
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(109, 106, 106);
+  font-size: 13px;
+  margin-top: -50px;
+  margin-left: 85px;
+}
+#section-3 {
+  background-color: #f0ecec;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  height: 500px;
+}
+#section-3 .video {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 60px;
+  transition: 0.8s ease-in-out;
+}
+#section-3 .video:hover{
+  transform: scale(1.6);
+  margin-left: 370px;
+  margin-top: -10px;
+}
+#section-3 .flowers-suprise {
+  margin-left: 30px;
+}
+#section-3 .flowers-suprise h2 {
+  margin-left: 60px;
+  margin-top: 80px;
+  max-width: 450px;
+}
+#section-3 .flowers-suprise p {
+  margin-left: 60px;
+  margin-top: 50px;
+}
+#section-3 .flowers-suprise ul {
+  margin-left: 60px;
+}
+#section-3 .flowers-suprise ul li {
+  padding-top: 10px;
+  word-spacing: 2px;
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(109, 106, 106);
+  font-size: 17px;
+  font-weight: 500;
+}
+#section-4 h2 {
+  text-align: center;
+  margin: 50px auto 0 auto;
+}
+#section-4 p {
+  margin: 0 auto;
+  text-align: center;
+}
+#section-4 .cards {
+  margin-left: 120px;
+}
+#section-4 .cards div {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+#section-4 .cards div img {
+  width: 370px;
+  height: 250px;
+  transition: 0.4s ease-in-out;
+}
+#section-4 .cards .card:hover.card img {
+  transform: scale(1.2);
+}
+#section-4 div p {
+  position: absolute;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: white;
+  top: 10px;
+  left: 20px;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 13px;
+}
